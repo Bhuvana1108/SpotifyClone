@@ -10,8 +10,8 @@
    <nav>
     <ul>
       <li class="brand"><img src="Images/logo.png" alt="Spotify logo">Spotify</li>
-      <li><a href=#index.html>All music</a></li>
-      <li><a href=#playlist.html id="playList" target="_blank">Playlists</a></li>
+      <li><a href="#index.html">All music</a></li>
+      <li><a href="#playlist.html" target="_blank">Playlists</a></li>
       <li><input type="text" placeholder="Search.." name="search" id="search">
         <button type="submit" id="searchButton"><i class="fa fa-search"></i></button></li>
         <div class="login">
@@ -20,7 +20,10 @@
     </ul>
    </nav>
 
-  </div>
+   <div class="playlist">
+    <h3 id="myList">My Playlists</h3>
+   </div>
+
 
    <div class="bottom">
     <input type="range" name="range" id="playButton" min="0" max="100"> 
@@ -33,9 +36,8 @@
       <div class="songInfo">
         <img src="Images/playing.gif" width="40px" id="gif"><span id="masterSongName"> Warriors - Mortals [NCS Release]</span>
       </div>
+</div>
 
-
-   </div>
    <script src="https://kit.fontawesome.com/914f4e0640.js" crossorigin="anonymous"></script>
     <script src="index.js"></script>
   </body>

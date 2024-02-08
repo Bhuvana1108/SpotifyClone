@@ -6,6 +6,7 @@ let playButton=document.getElementById('playButton');
 let gif=document.getElementById('gif');
 let masterSongName = document.getElementById('masterSongName');
 let songItems=Array.from(document.getElementsByClassName('songItem'));
+let myPlay=document.getElementsByClassName('playlist');
 
 let songs=[
   {songName:"Warriors - Mortals [NCS Release]", filePath:"songs/1.mp3", coverPath:"covers/1.jpg"},
@@ -117,3 +118,27 @@ document.getElementById('previous').addEventListener('click',()=>{
   gif.style.opacity=1;
   
   })
+
+  Array.from(document.getElementsByClassName('heartBtn')).forEach((element,i)=>
+  {
+    element.addEventListener('click',()=>{
+      
+      element.style.color="red";
+      let list=[];
+      list=songs[i].songName;
+      console.log(list);
+    })
+    
+  })
+
+
+
+ 
+ 
+
+
+
+
+
+
+  
